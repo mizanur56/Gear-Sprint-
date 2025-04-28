@@ -1,0 +1,233 @@
+[
+  {
+    "name": "Treadmill Pro 3000",
+    "category": "Cardio Machines",
+    "price": 1800,
+    "stock": 10,
+    "description": "High-performance treadmill for intense cardio workouts.",
+    "image": "https://i.ibb.co/QcnNjVT/Treadmills-img8.jpg",
+    "isDeleted": false,
+    "isFeatured": false,
+    "rating": 4.7
+  },
+  {
+    "name": "Elliptical Cross X5",
+    "category": "Cardio Machines",
+    "price": 1300,
+    "stock": 8,
+    "description": "Smooth elliptical machine for low-impact cardio.",
+    "image": "https://i.ibb.co/QcnNjVT/Treadmills-img8.jpg",
+    "isDeleted": false,
+    "isFeatured": false,
+    "rating": 4.5
+  },
+  {
+    "name": "Spin Bike Velocity",
+    "category": "Cardio Machines",
+    "price": 950,
+    "stock": 12,
+    "description": "Durable spin bike for ultimate endurance training.",
+    "image": "https://i.ibb.co/QcnNjVT/Treadmills-img8.jpg",
+    "isDeleted": false,
+    "isFeatured": true,
+    "rating": 4.6
+  },
+  {
+    "name": "Adjustable Dumbbell Max",
+    "category": "Strength Training",
+    "price": 320,
+    "stock": 20,
+    "description": "Adjustable dumbbells for versatile strength training.",
+    "image": "https://i.ibb.co/QcnNjVT/Treadmills-img8.jpg",
+    "isDeleted": false,
+    "isFeatured": true,
+    "rating": 4.8
+  },
+  {
+    "name": "Olympic Barbell Pro",
+    "category": "Strength Training",
+    "price": 400,
+    "stock": 15,
+    "description": "Heavy-duty barbell for powerlifting and strength building.",
+    "image": "https://i.ibb.co/QcnNjVT/Treadmills-img8.jpg",
+    "isDeleted": false,
+    "isFeatured": true,
+    "rating": 4.7
+  },
+  {
+    "name": "Weight Plate Set 100kg",
+    "category": "Strength Training",
+    "price": 450,
+    "stock": 10,
+    "description": "Premium weight plate set for serious lifters.",
+    "image": "https://i.ibb.co/QcnNjVT/Treadmills-img8.jpg",
+    "isDeleted": false,
+    "isFeatured": false,
+    "rating": 4.6
+  },
+  {
+    "name": "Kettlebell Set Classic",
+    "category": "Functional Fitness",
+    "price": 200,
+    "stock": 18,
+    "description": "Versatile kettlebell set for functional training exercises.",
+    "image": "https://i.ibb.co/QcnNjVT/Treadmills-img8.jpg",
+    "isDeleted": false,
+    "isFeatured": false,
+    "rating": 4.7
+  },
+  {
+    "name": "Resistance Band Pro Pack",
+    "category": "Functional Fitness",
+    "price": 80,
+    "stock": 25,
+    "description": "High-quality resistance bands for strength and rehab training.",
+    "image": "https://i.ibb.co/QcnNjVT/Treadmills-img8.jpg",
+    "isDeleted": false,
+    "isFeatured": false,
+    "rating": 4.5
+  },
+  {
+    "name": "Medicine Ball 10kg",
+    "category": "Functional Fitness",
+    "price": 90,
+    "stock": 20,
+    "description": "Heavy-duty medicine ball for dynamic workouts.",
+    "image": "https://i.ibb.co/QcnNjVT/Treadmills-img8.jpg",
+    "isDeleted": false,
+    "isFeatured": false,
+    "rating": 4.6
+  },
+  {
+    "name": "Ultimate Home Gym System",
+    "category": "Home Gym Packages",
+    "price": 2600,
+    "stock": 6,
+    "description": "Complete home gym package with all essentials.",
+    "image": "https://i.ibb.co/QcnNjVT/Treadmills-img8.jpg",
+    "isDeleted": false,
+    "isFeatured": false,
+    "rating": 4.9
+  },
+  {
+    "name": "Compact Home Gym Kit",
+    "category": "Home Gym Packages",
+    "price": 1800,
+    "stock": 9,
+    "description": "Space-saving home gym set for apartments and small spaces.",
+    "image": "https://i.ibb.co/QcnNjVT/Treadmills-img8.jpg",
+    "isDeleted": false,
+    "isFeatured": true,
+    "rating": 4.7
+  },
+  {
+    "name": "Starter Home Gym Bundle",
+    "category": "Home Gym Packages",
+    "price": 1500,
+    "stock": 12,
+    "description": "Perfect beginner bundle for setting up a home gym.",
+    "image": "https://i.ibb.co/QcnNjVT/Treadmills-img8.jpg",
+    "isDeleted": false,
+    "isFeatured": true,
+    "rating": 4.6
+  },
+  {
+    "name": "Gym Gloves ProGrip",
+    "category": "Accessories",
+    "price": 30,
+    "stock": 50,
+    "description": "Durable gloves for superior grip and comfort.",
+    "image": "https://i.ibb.co/QcnNjVT/Treadmills-img8.jpg",
+    "isDeleted": false,
+    "isFeatured": false,
+    "rating": 4.5
+  },
+  {
+    "name": "Weightlifting Belt Titan",
+    "category": "Accessories",
+    "price": 55,
+    "stock": 30,
+    "description": "Supportive belt for heavy lifting sessions.",
+    "image": "https://i.ibb.co/QcnNjVT/Treadmills-img8.jpg",
+    "isDeleted": false,
+    "isFeatured": false,
+    "rating": 4.6
+  },
+  {
+    "name": "Non-slip Yoga Mat",
+    "category": "Accessories",
+    "price": 40,
+    "stock": 40,
+    "description": "Premium yoga mat for stretching and fitness exercises.",
+    "image": "https://i.ibb.co/QcnNjVT/Treadmills-img8.jpg",
+    "isDeleted": false,
+    "isFeatured": false,
+    "rating": 4.7
+  },
+  {
+    "name": "Percussion Massage Gun",
+    "category": "Recovery & Mobility",
+    "price": 210,
+    "stock": 15,
+    "description": "Professional-grade massage gun for fast muscle recovery.",
+    "image": "https://i.ibb.co/QcnNjVT/Treadmills-img8.jpg",
+    "isDeleted": false,
+    "isFeatured": true,
+    "rating": 4.8
+  },
+  {
+    "name": "Foam Roller Therapy Pro",
+    "category": "Recovery & Mobility",
+    "price": 45,
+    "stock": 30,
+    "description": "High-density foam roller for deep tissue massage.",
+    "image": "https://i.ibb.co/QcnNjVT/Treadmills-img8.jpg",
+    "isDeleted": false,
+    "isFeatured": true,
+    "rating": 4.6
+  },
+  {
+    "name": "Stretching Strap Elite",
+    "category": "Recovery & Mobility",
+    "price": 25,
+    "stock": 35,
+    "description": "Ideal stretching strap for mobility exercises and rehab.",
+    "image": "https://i.ibb.co/QcnNjVT/Treadmills-img8.jpg",
+    "isDeleted": false,
+    "isFeatured": false,
+    "rating": 4.5
+  },
+  {
+    "name": "Performance Compression Shirt",
+    "category": "Apparel & Gear",
+    "price": 60,
+    "stock": 22,
+    "description": "Lightweight, breathable compression shirt for intense workouts.",
+    "image": "https://i.ibb.co/QcnNjVT/Treadmills-img8.jpg",
+    "isDeleted": false,
+    "isFeatured": false,
+    "rating": 4.6
+  },
+  {
+    "name": "Athletic Training Shorts",
+    "category": "Apparel & Gear",
+    "price": 50,
+    "stock": 28,
+    "description": "Flexible training shorts for maximum movement and comfort.",
+    "image": "https://i.ibb.co/QcnNjVT/Treadmills-img8.jpg",
+    "isDeleted": false,
+    "isFeatured": true,
+    "rating": 4.5
+  },
+  {
+    "name": "All-Purpose Gym Backpack",
+    "category": "Apparel & Gear",
+    "price": 80,
+    "stock": 18,
+    "description": "Durable gym backpack with compartments for gear and clothes.",
+    "image": "https://i.ibb.co/QcnNjVT/Treadmills-img8.jpg",
+    "isDeleted": false,
+    "isFeatured": false,
+    "rating": 4.7
+  }
+]
