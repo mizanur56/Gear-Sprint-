@@ -1,6 +1,4 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
 import "./style.css";
 import { Pagination, Autoplay } from "swiper/modules";
 import { categories } from "../../../data/data";

@@ -176,9 +176,18 @@ const Navbar = () => {
   const Links = [
     { name: "Home", link: "/" },
     { name: "About Us", link: "/aboutUs" },
-    { name: "Products", link: "/products" },
+    { name: "Products", link: "/allProduct" },
     { name: "Blog", link: "/blog" },
     { name: "Contact Us", link: "/contactUs" },
+    {
+      name: "Management",
+      children: [
+        { name: "Product Management", link: "/management/productManagement" },
+        { name: "Add Product", link: "/management/addProduct" },
+        { name: "Users", link: "/management/users" },
+        { name: "Order History", link: "/management/orderHistory" },
+      ],
+    },
   ];
 
   const pathname = window.location.pathname;
@@ -212,7 +221,7 @@ const Navbar = () => {
               <IoMdClose />
             </button>
           </div>
-          <ul
+          {/* <ul
             className={`list-none block bg-opacity-5 pt-4 lg:pt-0 lg:flex gap-5 ${
               isMenuOpen ? "text-white" : "text-black"
             }`}
@@ -230,6 +239,127 @@ const Navbar = () => {
                 </Link>
               </li>
             ))}
+          </ul> */}
+          {/* <ul
+            className={`list-none block bg-opacity-5 pt-4 lg:pt-0 lg:flex gap-5 ${
+              isMenuOpen ? "text-white" : "text-black"
+            }`}
+          >
+            {Links.map((item, index) => (
+              <li
+                key={index}
+                className="group relative py-2 lg:pb-4 px-6 lg:px-0"
+              >
+                {item.children ? (
+                  <>
+                    <button
+                      className={`hover:border-b-2 hover:border-amber-500 text-black font-medium duration-300 lg:pb-[2px] ${
+                        pathname === item.link
+                          ? "text-teal-500 font-medium"
+                          : ""
+                      }`}
+                    >
+                      {item.name}
+                    </button>
+                    <ul className="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 min-w-[150px]">
+                      {item.children.map((child, idx) => (
+                        <li
+                          key={idx}
+                          className="border-b border-gray-100 last:border-0"
+                        >
+                          <Link
+                            to={child.link}
+                            onClick={toggleMenu}
+                            className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                          >
+                            {child.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                ) : (
+                  <Link
+                    to={item.link}
+                    onClick={toggleMenu}
+                    className={`hover:border-b-2 hover:border-amber-500 text-black font-medium duration-300 lg:pb-[2px] ${
+                      pathname === item.link ? "text-teal-500 font-medium" : ""
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                )}
+              </li>
+            ))}
+          </ul> */}
+          <ul
+            className={`list-none block bg-opacity-5 pt-4 lg:pt-0 lg:flex gap-5 ${
+              isMenuOpen ? "text-white" : "text-black"
+            }`}
+          >
+            {Links.map((item, index) => {
+              // 👇 Check if the parent or any child is active
+              const isActiveParent =
+                item.link === pathname ||
+                (item.children &&
+                  item.children.some((child) =>
+                    pathname.startsWith(child.link)
+                  ));
+
+              return (
+                <li
+                  key={index}
+                  className="group relative py-2 lg:pb-4 px-6 lg:px-0"
+                >
+                  {item.children ? (
+                    <>
+                      <button
+                        className={`hover:border-b-2 hover:border-amber-500 font-medium duration-300 lg:pb-[2px] ${
+                          isActiveParent
+                            ? "text-teal-500 font-medium"
+                            : "text-black"
+                        }`}
+                      >
+                        {item.name}
+                      </button>
+                      {/* Dropdown Menu */}
+                      <ul className="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 min-w-[150px]">
+                        {item.children.map((child, idx) => (
+                          <li
+                            key={idx}
+                            className="border-b border-gray-100 last:border-0"
+                          >
+                            <Link
+                              to={child.link}
+                              onClick={toggleMenu}
+                              className={`block px-4 py-2 ${
+                                pathname === child.link
+                                  ? "text-teal-500 bg-gray-100"
+                                  : "text-gray-700 hover:bg-gray-100"
+                              }`}
+                            >
+                              {child.name}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </>
+                  ) : (
+                    <Link
+                      to={item.link}
+                      onClick={toggleMenu}
+                      className={`hover:border-b-2 hover:border-amber-500 font-medium duration-300 lg:pb-[2px] ${
+                        pathname === item.link
+                          ? "text-teal-500 font-medium"
+                          : "text-black"
+                      }`}
+                    >
+                      {item.name}
+                    </Link>
+                  )}
+                </li>
+              );
+            })}
           </ul>
         </div>
 

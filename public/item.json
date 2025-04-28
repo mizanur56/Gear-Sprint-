@@ -16,7 +16,7 @@
     "price": 1300,
     "stock": 8,
     "description": "Smooth elliptical machine for low-impact cardio.",
-    "image": "https://i.ibb.co/QcnNjVT/Treadmills-img8.jpg",
+    "image": "https://i.ibb.co.com/4w9H6hhg/Elliptical-Cross-X5.jpg",
     "isDeleted": false,
     "isFeatured": false,
     "rating": 4.5
@@ -27,7 +27,7 @@
     "price": 950,
     "stock": 12,
     "description": "Durable spin bike for ultimate endurance training.",
-    "image": "https://i.ibb.co/QcnNjVT/Treadmills-img8.jpg",
+    "image": "https://i.ibb.co.com/C3ySYF4d/Spin-Bike-Velocity.png",
     "isDeleted": false,
     "isFeatured": true,
     "rating": 4.6
@@ -38,7 +38,7 @@
     "price": 320,
     "stock": 20,
     "description": "Adjustable dumbbells for versatile strength training.",
-    "image": "https://i.ibb.co/QcnNjVT/Treadmills-img8.jpg",
+    "image": "https://i.ibb.co.com/gMr61rTx/Adjustable-Dumbbell-Max.webp",
     "isDeleted": false,
     "isFeatured": true,
     "rating": 4.8
@@ -49,7 +49,7 @@
     "price": 400,
     "stock": 15,
     "description": "Heavy-duty barbell for powerlifting and strength building.",
-    "image": "https://i.ibb.co/QcnNjVT/Treadmills-img8.jpg",
+    "image": "https://i.ibb.co.com/fGvzT11H/Olympic-Barbell-Pro.jpg",
     "isDeleted": false,
     "isFeatured": true,
     "rating": 4.7
@@ -60,7 +60,7 @@
     "price": 450,
     "stock": 10,
     "description": "Premium weight plate set for serious lifters.",
-    "image": "https://i.ibb.co/QcnNjVT/Treadmills-img8.jpg",
+    "image": "https://i.ibb.co.com/r9fC5PY/Weight-Plate-Set-100kg.jpg",
     "isDeleted": false,
     "isFeatured": false,
     "rating": 4.6
@@ -71,7 +71,7 @@
     "price": 200,
     "stock": 18,
     "description": "Versatile kettlebell set for functional training exercises.",
-    "image": "https://i.ibb.co/QcnNjVT/Treadmills-img8.jpg",
+    "image": "https://i.ibb.co.com/xt7YF5qR/Kettlebell-Set-Classic.jpg",
     "isDeleted": false,
     "isFeatured": false,
     "rating": 4.7
@@ -82,7 +82,7 @@
     "price": 80,
     "stock": 25,
     "description": "High-quality resistance bands for strength and rehab training.",
-    "image": "https://i.ibb.co/QcnNjVT/Treadmills-img8.jpg",
+    "image": "https://i.ibb.co.com/Z1HhKYbt/Resistance-Band-Pro-Pack.jpg",
     "isDeleted": false,
     "isFeatured": false,
     "rating": 4.5
@@ -214,7 +214,7 @@
     "price": 50,
     "stock": 28,
     "description": "Flexible training shorts for maximum movement and comfort.",
-    "image": "https://i.ibb.co/QcnNjVT/Treadmills-img8.jpg",
+    "image": "https://i.ibb.co.com/t78W4XW/Athletic-Training-Shorts.jpg",
     "isDeleted": false,
     "isFeatured": true,
     "rating": 4.5
@@ -225,9 +225,53 @@
     "price": 80,
     "stock": 18,
     "description": "Durable gym backpack with compartments for gear and clothes.",
-    "image": "https://i.ibb.co/QcnNjVT/Treadmills-img8.jpg",
+    "image": "https://i.ibb.co.com/BKQ8SKgM/All-Purpose-Gym-Backpack.jpg",
     "isDeleted": false,
     "isFeatured": false,
     "rating": 4.7
+  },
+  {
+    "name": "Jump Rope Beta",
+    "category": "Jump Rope",
+    "price": 35,
+    "stock": 13,
+    "description": "Durable jump rope with adjustable length.",
+    "image": "https://i.ibb.co/QcnNjVT/Treadmills-img8.jpg",
+    "isDeleted": false,
+    "isFeatured": false,
+    "rating": 4.3
+  },
+  {
+    "name": "Jump Rope Gamma",
+    "category": "Jump Rope",
+    "price": 40,
+    "stock": 9,
+    "description": "Lightweight jump rope for effective cardio training.",
+    "image": "https://i.ibb.co/QcnNjVT/Treadmills-img8.jpg",
+    "isDeleted": false,
+    "isFeatured": false,
+    "rating": 4.4
+  },
+  {
+    "name": "Jump Rope Delta",
+    "category": "Jump Rope",
+    "price": 45,
+    "stock": 12,
+    "description": "Adjustable jump rope with ergonomic handles.",
+    "image": "https://i.ibb.co.com/v4m5ssjy/Jump-Rope-Delta.jpg",
+    "isDeleted": false,
+    "isFeatured": false,
+    "rating": 4.5
+  },
+  {
+    "name": "Jump Rope Epsilon",
+    "category": "Jump Rope",
+    "price": 50,
+    "stock": 14,
+    "description": "Jump rope with high-quality materials for durability.",
+    "image": "https://i.ibb.co.com/G3pPWDrQ/plastic-skipping-ropes.jpg",
+    "isDeleted": false,
+    "isFeatured": false,
+    "rating": 4.6
   }
 ]

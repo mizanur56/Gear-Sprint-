@@ -26,6 +26,10 @@ export const categories = [
     image: " ../../public/images/Accessories.jpg",
   },
   {
+    name: "Jump Rope",
+    image: "../../public/images/Strength Training.webp",
+  },
+  {
     name: "Recovery & Mobility",
     image: " ../../public/images/Recovery & Mobility.jpg",
   },
