@@ -1,9 +1,10 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import ItemCard from "../../shared/ItemCard";
 import { categories } from "../../data/data";
+import { useGetAllProductsQuery } from "../../redux/features/product/productApi";
 
 export type TProduct = {
-  id: number;
+  _id: number;
   name: string;
   price: number; // <-- change this to number
   category: string;
@@ -14,20 +15,31 @@ export type TProduct = {
 };
 
 const AllProduct = () => {
-  const [products, setProducts] = useState<TProduct[]>([]);
+  // const [products, setProducts] = useState<TProduct[]>([]);
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [sortOrder, setSortOrder] = useState("");
 
-  useEffect(() => {
-    fetch("item.json")
-      .then((res) => res.json())
-      .then((data) => setProducts(data));
-  });
+  const { data, isLoading } = useGetAllProductsQuery(undefined);
+  const products = data?.data || [];
 
-  let filteredProducts =
-    selectedCategory === "All"
-      ? products
-      : products.filter((product) => product.category === selectedCategory);
+  if (isLoading) {
+    return <h1>Loading...</h1>;
+  }
+
+  // useEffect(() => {
+  //   fetch("item.json")
+  //     .then((res) => res.json())
+  //     .then((data) => setProducts(data));
+  // });
+
+  // let filteredProducts =
+  //   selectedCategory === "All"
+  //     ? products
+  //     : products.filter((product) => product.category === selectedCategory);
+
+  let filteredProducts = products.filter((product: TProduct) =>
+    selectedCategory === "All" ? true : product.category === selectedCategory
+  );
 
   const handleCategoryChange = (
     event: React.ChangeEvent<HTMLSelectElement>
@@ -80,7 +92,7 @@ const AllProduct = () => {
         </button>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-5">
-        {filteredProducts.map((product, index) => (
+        {filteredProducts.map((product: TProduct, index: number) => (
           <ItemCard key={index} product={product} />
         ))}
       </div>

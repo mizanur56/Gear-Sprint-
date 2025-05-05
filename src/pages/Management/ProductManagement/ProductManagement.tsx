@@ -1,51 +1,28 @@
 import React from "react";
-import { FaPlusCircle } from "react-icons/fa";
+import { FaEdit, FaPlusCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useGetAllProductsQuery } from "../../../redux/features/product/productApi";
+import { TProduct } from "../../AllProduct/AllProduct";
+import { MdDeleteForever } from "react-icons/md";
 
-interface Product {
-  id: number;
-  name: string;
-  brand: string;
-  price: number;
-  quantity: number;
-  total: number;
-  imageUrl: string;
-}
-
-const products: Product[] = [
-  {
-    id: 1,
-    name: "Apple Watch Series 8 GPS 45mm",
-    brand: "UBL",
-    price: 550,
-    quantity: 3,
-    total: 1500,
-    imageUrl:
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
-  },
-  {
-    id: 2,
-    name: "Apple Watch Series 8 GPS 45mm",
-    brand: "UBL",
-    price: 550,
-    quantity: 3,
-    total: 1500,
-    imageUrl:
-      "https://plus.unsplash.com/premium_photo-1681711647066-ef84575c0d95?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZHVjdCUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fHww",
-  },
-  {
-    id: 3,
-    name: "Apple Watch Series 8 GPS 45mm",
-    brand: "UBL",
-    price: 550,
-    quantity: 3,
-    total: 1500,
-    imageUrl:
-      "https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL3JtMzYyLTAxYS1tb2NrdXAuanBn.jpg",
-  },
-];
+// interface Product {
+//   id: number;
+//   name: string;
+//   brand: string;
+//   price: number;
+//   quantity: number;
+//   total: number;
+//   imageUrl: string;
+// }
 
 const ProductManagement: React.FC = () => {
+  const { data, isLoading } = useGetAllProductsQuery(undefined);
+  const products = data?.data || [];
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <div className="bg-gray-50 max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
       <div className="flex items-center justify-between mb-8">
@@ -88,11 +65,11 @@ const ProductManagement: React.FC = () => {
               </tr>
             </thead>
             <tbody>
-              {products.map((product) => (
-                <tr key={product.id} className="border-b last:border-0">
+              {products.map((product: TProduct) => (
+                <tr key={product._id} className="border-b last:border-0">
                   <td className="px-6 py-4 flex items-center gap-4">
                     <img
-                      src={product.imageUrl}
+                      src={product.image}
                       alt={product.name}
                       className="w-12 h-12 rounded-md object-cover"
                     />
@@ -100,15 +77,23 @@ const ProductManagement: React.FC = () => {
                       <p className="text-gray-800 font-medium">
                         {product.name}
                       </p>
-                      <span className="text-green-500 text-sm">
-                        {product.brand}
-                      </span>
+                      {/* <span className="text-green-500 text-sm">
+                        {product.category}
+                      </span> */}
                     </div>
                   </td>
+                  <td className="px-6 py-4">{product.category}</td>
                   <td className="px-6 py-4">${product.price}</td>
-                  <td className="px-6 py-4">x{product.quantity}</td>
                   <td className="px-6 py-4 font-semibold text-gray-900">
-                    ${product.total}
+                    {product.stock}
+                  </td>
+                  <td className="px-6 py-4 flex gap-2 items-center">
+                    <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                      <MdDeleteForever />
+                    </button>
+                    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                      <FaEdit />
+                    </button>
                   </td>
                 </tr>
               ))}

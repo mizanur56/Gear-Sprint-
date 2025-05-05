@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "name": "Treadmill Pro 3000",
     "category": "Cardio Machines",
     "price": 1800,
@@ -11,6 +12,7 @@
     "rating": 4.7
   },
   {
+    "id": 2,
     "name": "Elliptical Cross X5",
     "category": "Cardio Machines",
     "price": 1300,
@@ -22,6 +24,7 @@
     "rating": 4.5
   },
   {
+    "id": 3,
     "name": "Spin Bike Velocity",
     "category": "Cardio Machines",
     "price": 950,
@@ -33,6 +36,7 @@
     "rating": 4.6
   },
   {
+    "id": 4,
     "name": "Adjustable Dumbbell Max",
     "category": "Strength Training",
     "price": 320,
@@ -44,6 +48,7 @@
     "rating": 4.8
   },
   {
+    "id": 5,
     "name": "Olympic Barbell Pro",
     "category": "Strength Training",
     "price": 400,
@@ -55,6 +60,7 @@
     "rating": 4.7
   },
   {
+    "id": 6,
     "name": "Weight Plate Set 100kg",
     "category": "Strength Training",
     "price": 450,
@@ -66,6 +72,7 @@
     "rating": 4.6
   },
   {
+    "id": 7,
     "name": "Kettlebell Set Classic",
     "category": "Functional Fitness",
     "price": 200,
@@ -77,6 +84,7 @@
     "rating": 4.7
   },
   {
+    "id": 8,
     "name": "Resistance Band Pro Pack",
     "category": "Functional Fitness",
     "price": 80,
@@ -88,6 +96,7 @@
     "rating": 4.5
   },
   {
+    "id": 9,
     "name": "Medicine Ball 10kg",
     "category": "Functional Fitness",
     "price": 90,
@@ -99,6 +108,7 @@
     "rating": 4.6
   },
   {
+    "id": 10,
     "name": "Ultimate Home Gym System",
     "category": "Home Gym Packages",
     "price": 2600,
@@ -110,6 +120,7 @@
     "rating": 4.9
   },
   {
+    "id": 11,
     "name": "Compact Home Gym Kit",
     "category": "Home Gym Packages",
     "price": 1800,
@@ -121,6 +132,7 @@
     "rating": 4.7
   },
   {
+    "id": 12,
     "name": "Starter Home Gym Bundle",
     "category": "Home Gym Packages",
     "price": 1500,
@@ -132,6 +144,7 @@
     "rating": 4.6
   },
   {
+    "id": 13,
     "name": "Gym Gloves ProGrip",
     "category": "Accessories",
     "price": 30,
@@ -143,6 +156,7 @@
     "rating": 4.5
   },
   {
+    "id": 14,
     "name": "Weightlifting Belt Titan",
     "category": "Accessories",
     "price": 55,
@@ -154,6 +168,7 @@
     "rating": 4.6
   },
   {
+    "id": 15,
     "name": "Non-slip Yoga Mat",
     "category": "Accessories",
     "price": 40,
@@ -165,6 +180,7 @@
     "rating": 4.7
   },
   {
+    "id": 16,
     "name": "Percussion Massage Gun",
     "category": "Recovery & Mobility",
     "price": 210,
@@ -176,6 +192,7 @@
     "rating": 4.8
   },
   {
+    "id": 17,
     "name": "Foam Roller Therapy Pro",
     "category": "Recovery & Mobility",
     "price": 45,
@@ -187,6 +204,7 @@
     "rating": 4.6
   },
   {
+    "id": 18,
     "name": "Stretching Strap Elite",
     "category": "Recovery & Mobility",
     "price": 25,
@@ -198,6 +216,7 @@
     "rating": 4.5
   },
   {
+    "id": 19,
     "name": "Performance Compression Shirt",
     "category": "Apparel & Gear",
     "price": 60,
@@ -209,6 +228,7 @@
     "rating": 4.6
   },
   {
+    "id": 20,
     "name": "Athletic Training Shorts",
     "category": "Apparel & Gear",
     "price": 50,
@@ -220,6 +240,7 @@
     "rating": 4.5
   },
   {
+    "id": 21,
     "name": "All-Purpose Gym Backpack",
     "category": "Apparel & Gear",
     "price": 80,
@@ -231,6 +252,7 @@
     "rating": 4.7
   },
   {
+    "id": 22,
     "name": "Jump Rope Beta",
     "category": "Jump Rope",
     "price": 35,
@@ -242,6 +264,7 @@
     "rating": 4.3
   },
   {
+    "id": 23,
     "name": "Jump Rope Gamma",
     "category": "Jump Rope",
     "price": 40,
@@ -253,6 +276,7 @@
     "rating": 4.4
   },
   {
+    "id": 24,
     "name": "Jump Rope Delta",
     "category": "Jump Rope",
     "price": 45,
@@ -264,6 +288,7 @@
     "rating": 4.5
   },
   {
+    "id": 25,
     "name": "Jump Rope Epsilon",
     "category": "Jump Rope",
     "price": 50,

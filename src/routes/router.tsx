@@ -7,6 +7,10 @@ import AllProduct from "../pages/AllProduct/AllProduct";
 import AddProduct from "../pages/Management/AddProduct/AddProduct";
 import AdminLayout from "../layout/AdminLayout";
 import ProductManagement from "../pages/Management/ProductManagement/ProductManagement";
+import ItemDetails from "../pages/ItemDetails/ItemDetails";
+import ShoppingCart from "../cart/ShoppingCart";
+import Payment from "../cart/Payment/Payment";
+import OrderHistory from "../pages/Management/orderHistory/OrderHistory";
 
 export const router = createBrowserRouter([
   {
@@ -29,6 +33,18 @@ export const router = createBrowserRouter([
         path: "/allProduct",
         element: <AllProduct />,
       },
+      {
+        path: "/product/:id",
+        element: <ItemDetails />,
+      },
+      {
+        path: "/cart",
+        element: <ShoppingCart />,
+      },
+      {
+        path: "/payment",
+        element: <Payment />,
+      },
     ],
   },
   {
@@ -42,6 +58,10 @@ export const router = createBrowserRouter([
       {
         path: "/management/productManagement",
         element: <ProductManagement />,
+      },
+      {
+        path: "/management/orderHistory",
+        element: <OrderHistory />,
       },
     ],
   },

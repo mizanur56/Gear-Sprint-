@@ -163,7 +163,7 @@ import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 import { IoCartOutline } from "react-icons/io5";
 import { LiaBarsSolid } from "react-icons/lia";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -221,77 +221,6 @@ const Navbar = () => {
               <IoMdClose />
             </button>
           </div>
-          {/* <ul
-            className={`list-none block bg-opacity-5 pt-4 lg:pt-0 lg:flex gap-5 ${
-              isMenuOpen ? "text-white" : "text-black"
-            }`}
-          >
-            {Links.map((item, index) => (
-              <li key={index} className="py-2 lg:pb-4 px-6 lg:px-0">
-                <Link
-                  to={item.link}
-                  onClick={toggleMenu}
-                  className={` hover:border-b-2 hover:border-amber-500 text-black font-medium duration-300 lg:pb-[2px] ${
-                    pathname === item.link ? "text-teal-500 font-medium" : ""
-                  }`}
-                >
-                  {item.name}
-                </Link>
-              </li>
-            ))}
-          </ul> */}
-          {/* <ul
-            className={`list-none block bg-opacity-5 pt-4 lg:pt-0 lg:flex gap-5 ${
-              isMenuOpen ? "text-white" : "text-black"
-            }`}
-          >
-            {Links.map((item, index) => (
-              <li
-                key={index}
-                className="group relative py-2 lg:pb-4 px-6 lg:px-0"
-              >
-                {item.children ? (
-                  <>
-                    <button
-                      className={`hover:border-b-2 hover:border-amber-500 text-black font-medium duration-300 lg:pb-[2px] ${
-                        pathname === item.link
-                          ? "text-teal-500 font-medium"
-                          : ""
-                      }`}
-                    >
-                      {item.name}
-                    </button>
-                    <ul className="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 min-w-[150px]">
-                      {item.children.map((child, idx) => (
-                        <li
-                          key={idx}
-                          className="border-b border-gray-100 last:border-0"
-                        >
-                          <Link
-                            to={child.link}
-                            onClick={toggleMenu}
-                            className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                          >
-                            {child.name}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </>
-                ) : (
-                  <Link
-                    to={item.link}
-                    onClick={toggleMenu}
-                    className={`hover:border-b-2 hover:border-amber-500 text-black font-medium duration-300 lg:pb-[2px] ${
-                      pathname === item.link ? "text-teal-500 font-medium" : ""
-                    }`}
-                  >
-                    {item.name}
-                  </Link>
-                )}
-              </li>
-            ))}
-          </ul> */}
           <ul
             className={`list-none block bg-opacity-5 pt-4 lg:pt-0 lg:flex gap-5 ${
               isMenuOpen ? "text-white" : "text-black"
@@ -364,16 +293,24 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-4 text-sm">
-          <p>
-            <IoCartOutline className="text-red-700 rounded-full p-2 hover:bg-red-700 hover:text-white  border border-red-700 text-4xl" />
-          </p>
+          <NavLink
+            to="/cart"
+            className={({ isActive }) =>
+              `text-xl rounded-full p-2 border ${
+                isActive
+                  ? "bg-red-700 text-white border-red-700"
+                  : "text-red-700 border-red-700 hover:bg-red-700 hover:text-white"
+              }`
+            }
+          >
+            <IoCartOutline />
+          </NavLink>
           <button
             onClick={toggleMenu}
             className="flex lg:hidden text-2xl cursor-pointer text-red-700 p-[6px] font-bold"
           >
             <LiaBarsSolid />
           </button>
-
           <Link
             to="/signUp"
             className="text-white pr-2 lg:flex hidden lg:bg-[#BBA97B] lg:text-[#0f0f0f] lg:px-4 lg:py-2 lg:rounded-lg hover:bg-[#BBA97B]/80 duration-200"
