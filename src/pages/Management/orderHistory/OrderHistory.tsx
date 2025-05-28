@@ -25,7 +25,6 @@ const OrderHistory = () => {
     if (data) {
       try {
         const parsedData = JSON.parse(data);
-        // Ensure it's always treated as an array
         const normalizedData = Array.isArray(parsedData)
           ? parsedData
           : [parsedData];

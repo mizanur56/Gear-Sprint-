@@ -28,7 +28,6 @@ const ItemDetails: React.FC = () => {
   };
 
   const handleAddToCart = () => {
-    console.log(product);
     if (product) {
       const cartItem: CartItem = {
         id: product._id,

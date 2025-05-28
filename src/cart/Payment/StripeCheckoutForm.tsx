@@ -2,8 +2,11 @@ import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 import { useEffect, useState } from "react";
 import { useCreatePaymentMutation } from "../../redux/features/payment/paymentApi";
 import { Product } from "../Checkout";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const StripeCheckoutForm = () => {
+  const navigate = useNavigate();
   const stripe = useStripe();
   const elements = useElements();
   const [error, setError] = useState("");
@@ -87,9 +90,15 @@ const StripeCheckoutForm = () => {
           status: "pending",
         };
 
-        localStorage.setItem("paymentInfo", JSON.stringify(paymentData));
+        const existingOrders = localStorage.getItem("paymentInfo");
+        const updatedOrders = existingOrders
+          ? [...JSON.parse(existingOrders), paymentData]
+          : [paymentData];
 
+        localStorage.setItem("paymentInfo", JSON.stringify(updatedOrders));
         localStorage.removeItem("cart");
+        navigate("/management/orderHistory");
+        toast.success("Payment successful!");
       }
     } catch (err: any) {
       console.error("Payment Error:", err);

@@ -23,6 +23,5 @@ export const addToCart = (product: CartItem) => {
     existingCart.push(product);
   }
 
-  console.log("Cart before saving:", existingCart);
   localStorage.setItem("cart", JSON.stringify(existingCart));
 };

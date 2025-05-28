@@ -7,31 +7,31 @@ import { FaShippingFast } from "react-icons/fa";
 export const categories = [
   {
     name: "Cardio Machines",
-    image: "../../public/images/Cardio Machines.jpg",
+    image: "/images/Cardio Machines.jpg",
   },
   {
     name: "Strength Training",
-    image: "../../public/images/Strength Training.webp",
+    image: "/images/Strength Training.webp",
   },
   {
     name: "Functional Fitness",
-    image: " ../../public/images/Functional Fitness.jpg",
+    image: "/images/Functional Fitness.jpg",
   },
   {
     name: "Home Gym Packages",
-    image: " ../../public/images/Home Gym Packages.webp",
+    image: "/images/Home Gym Packages.webp",
   },
   {
     name: "Accessories",
-    image: " ../../public/images/Accessories.jpg",
+    image: "/images/Accessories.jpg",
   },
   {
     name: "Jump Rope",
-    image: "../../public/images/Strength Training.webp",
+    image: "/images/Strength Training.webp",
   },
   {
     name: "Recovery & Mobility",
-    image: " ../../public/images/Recovery & Mobility.jpg",
+    image: "/images/Recovery & Mobility.jpg",
   },
   {
     name: "Apparel & Gear",

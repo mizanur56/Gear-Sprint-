@@ -1,5 +1,5 @@
 import BannerSection from "../../../shared/BannerSection";
-import bgImage from "../../../../public/images/image.jpg";
+import bgImage from "/images/image.jpg";
 
 const OurMission = () => {
   return (

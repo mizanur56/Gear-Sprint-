@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
               </div>
               <img
                 className="size-24"
-                src="../../../public/images/GearSprintLogo.png"
+                src="/images/GearSprintLogo.png"
                 alt=""
               />
             </div>

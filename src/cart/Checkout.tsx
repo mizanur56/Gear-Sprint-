@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 export type Product = {
   id: number;
@@ -60,9 +61,37 @@ const Checkout: React.FC = () => {
     if (paymentMethod === "stripe") {
       navigate("/payment");
     } else {
-      alert("Checkout successful!");
-      localStorage.removeItem("cart");
-      navigate("/thank-you");
+      const paymentData = {
+        id: `cash-${Date.now()}`,
+        date: new Date().toISOString(),
+        products: products,
+        amount: total,
+        paymentMethod: "cash",
+        status: "pending",
+      };
+
+      try {
+        const existingOrders = localStorage.getItem("paymentInfo");
+        let parsedOrders: any[] = [];
+
+        if (existingOrders) {
+          const parsed = JSON.parse(existingOrders);
+          if (Array.isArray(parsed)) {
+            parsedOrders = parsed;
+          } else {
+            toast.warning("Existing orders were not an array. Resetting.");
+          }
+        }
+
+        const updatedOrders = [...parsedOrders, paymentData];
+        localStorage.setItem("paymentInfo", JSON.stringify(updatedOrders));
+        localStorage.removeItem("cart");
+
+        toast.success("Checkout successful!");
+        navigate("/management/orderHistory");
+      } catch (error) {
+        toast.error("Something went wrong during checkout. Please try again.");
+      }
     }
   };
 

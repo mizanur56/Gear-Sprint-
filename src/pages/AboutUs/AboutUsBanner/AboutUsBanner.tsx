@@ -1,5 +1,5 @@
 import BannerSection from "../../../shared/BannerSection";
-import bgImage from "../../../../public/images/Strength Training.webp";
+import bgImage from "/images/Strength Training.webp";
 
 const AboutUsBanner = () => {
   return (

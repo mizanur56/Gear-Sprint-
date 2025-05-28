@@ -177,7 +177,6 @@ const Navbar = () => {
     { name: "Home", link: "/" },
     { name: "About Us", link: "/aboutUs" },
     { name: "Products", link: "/allProduct" },
-    { name: "Blog", link: "/blog" },
     { name: "Contact Us", link: "/contactUs" },
     {
       name: "Management",
@@ -195,11 +194,9 @@ const Navbar = () => {
   return (
     <div className=" w-full sticky bg-white top-0 z-[999] font-poppins">
       <header className="max-w-7xl mx-auto flex justify-between items-center px-4 lg:px-8 py-1">
-        <img
-          className="size-24"
-          src="../../../public/images/GearSprintLogo.png"
-          alt=""
-        />
+        <Link to="/">
+          <img className="size-24" src="/images/GearSprintLogo.png" alt="" />
+        </Link>
         <div
           className={`fixed top-0 text-white bg-secondary lg:shadow-none shadow-xl shadow-primary/10 lg:bg-transparent left-0 lg:px-7 pb-7 w-[70%] lg:w-auto h-full overflow-auto transform transition-transform duration-500 ${
             isMenuOpen
@@ -208,11 +205,8 @@ const Navbar = () => {
           } lg:static lg:p-0 lg:overflow-visible`}
         >
           <div className="flex lg:hidden border-b border-[#202020] justify-between items-center px-6 py-[17px]">
-            <Link
-              to="/login"
-              className="text-primary/80 text-lg hover:text-primary"
-            >
-              Login
+            <Link to="/" className="text-primary/80 text-lg hover:text-primary">
+              Gear-Sprint
             </Link>
             <button
               onClick={toggleMenu}
@@ -311,12 +305,6 @@ const Navbar = () => {
           >
             <LiaBarsSolid />
           </button>
-          <Link
-            to="/signUp"
-            className="text-white pr-2 lg:flex hidden lg:bg-[#BBA97B] lg:text-[#0f0f0f] lg:px-4 lg:py-2 lg:rounded-lg hover:bg-[#BBA97B]/80 duration-200"
-          >
-            Sign Up
-          </Link>
         </div>
       </header>
     </div>
