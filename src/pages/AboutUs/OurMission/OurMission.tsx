@@ -25,7 +25,7 @@ const OurMission = () => {
             </div>
           </div>
         </div>
-        <img src="../../../../public/images/mission.webp" alt="" />
+        <img src="/images/mission.webp" alt="" />
         <h1 className="text-3xl text-black font-bold my-5 text-center">
           Our Vision
         </h1>

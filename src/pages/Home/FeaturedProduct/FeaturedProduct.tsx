@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ItemCard from "../../../shared/ItemCard";
+import { Link } from "react-router-dom";
 
 type Product = {
   id: number;
@@ -35,6 +36,13 @@ const FeaturedProduct = () => {
           ))}
         </div>
       </h1>
+      <div className="flex justify-center items-center">
+        <Link to={"/allProduct"}>
+          <button className="bg-teal-700 hover:bg-teal-600 cursor-pointer text-white font-bold py-2 px-4 rounded-md mt-2">
+            See All
+          </button>
+        </Link>
+      </div>
     </div>
   );
 };

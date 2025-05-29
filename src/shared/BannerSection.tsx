@@ -8,7 +8,7 @@ const BannerSection = ({ image, title }: TInfo) => {
       className="w-full h-64 bg-cover bg-center flex items-center justify-center"
       style={{ backgroundImage: `url(${image})` }}
     >
-      <div className="absolute h-[60%] inset-0 bg-black/50 bg-opacity-60 z-0"></div>
+      <div className="absolute h-fit inset-0 bg-black/50 bg-opacity-60 z-0"></div>
       <h1 className="text-4xl text-white font-bold z-10">{title}</h1>
     </div>
   );

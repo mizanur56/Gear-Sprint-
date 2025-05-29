@@ -21,6 +21,7 @@ const AllProduct = () => {
 
   const { data, isLoading } = useGetAllProductsQuery(undefined);
   const products = data?.data || [];
+  console.log(products);
 
   if (isLoading) {
     return <h1>Loading...</h1>;

@@ -22,7 +22,7 @@ const DetailsAboutUs = () => {
         ourselves and our community stay active has now grown into a brand
         dedicated to transforming spaces into Mighty Gyms.
       </p>
-      <img src="../../../../public/images/aboutUs.webp" alt="" />
+      <img src="/images/aboutUs.webp" alt="" />
     </div>
   );
 };
